@@ -20,6 +20,6 @@ public class VisitorController {
             times= visitor.getTimes()+1;
         }
         visitorService.saveOrUpdate(ip,times);
-        return "I have been seen ip "+visitor.getIp()+" "+times+" times.";
+        return "I have been seen ip "+ip+" "+times+" times.";
     }
 }
